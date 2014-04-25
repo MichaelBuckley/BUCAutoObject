@@ -210,7 +210,7 @@ static NSString *const AutocodingException = @"AutocodingException";
     {
         codableProperties = [NSMutableDictionary dictionary];
         Class subclass = [object class];
-        while (subclass != [NSObject class])
+        while (subclass != [NSObject class] && subclass != [NSManagedObject class])
         {
             [(NSMutableDictionary *)codableProperties addEntriesFromDictionary:[subclass codableProperties]];
             subclass = [subclass superclass];
