@@ -23,8 +23,8 @@
 
 @synthesize readonlyIntegerWithUnsupportedIvar = _readonlyIntegerWithUnsupportedIvar123;
 @synthesize readonlyIntegerWithPrivateSetter = _readonlyIntegerWithPrivateSetter123;
-@synthesize dynamicProperty;
-@synthesize readonlyDynamicProperty;
+@dynamic dynamicProperty;
+@dynamic readonlyDynamicProperty;
 
 + (NSArray *)uncodableProperties
 {

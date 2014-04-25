@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3010FC0A1908B11F00D5FD6D /* BUCAutoObjectImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3010FC081908B11F00D5FD6D /* BUCAutoObjectImplementation.h */; };
+		3010FC0B1908B11F00D5FD6D /* BUCAutoObjectImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3010FC091908B11F00D5FD6D /* BUCAutoObjectImplementation.m */; };
 		3050F62A1901F84300CA4AEB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050F6291901F84300CA4AEB /* Cocoa.framework */; };
 		3050F6341901F84300CA4AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3050F6321901F84300CA4AEB /* InfoPlist.strings */; };
 		3050F6381901F84300CA4AEB /* BUCAutoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050F6371901F84300CA4AEB /* BUCAutoObject.m */; };
@@ -16,6 +18,8 @@
 		3050F6491901F84300CA4AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3050F6471901F84300CA4AEB /* InfoPlist.strings */; };
 		3050F64B1901F84300CA4AEB /* BUCAutoObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050F64A1901F84300CA4AEB /* BUCAutoObjectTests.m */; };
 		3050F656190201EC00CA4AEB /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050F655190201EC00CA4AEB /* TestObject.m */; };
+		30E43E751908B94000F2C88A /* BUCAutoManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E43E731908B94000F2C88A /* BUCAutoManagedObject.h */; };
+		30E43E761908B94000F2C88A /* BUCAutoManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E43E741908B94000F2C88A /* BUCAutoManagedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3010FC081908B11F00D5FD6D /* BUCAutoObjectImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUCAutoObjectImplementation.h; sourceTree = "<group>"; };
+		3010FC091908B11F00D5FD6D /* BUCAutoObjectImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUCAutoObjectImplementation.m; sourceTree = "<group>"; };
 		3050F6261901F84300CA4AEB /* BUCAutoObject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BUCAutoObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3050F6291901F84300CA4AEB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3050F62C1901F84300CA4AEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +52,8 @@
 		3050F64A1901F84300CA4AEB /* BUCAutoObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUCAutoObjectTests.m; sourceTree = "<group>"; };
 		3050F654190201EC00CA4AEB /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		3050F655190201EC00CA4AEB /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		30E43E731908B94000F2C88A /* BUCAutoManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUCAutoManagedObject.h; sourceTree = "<group>"; };
+		30E43E741908B94000F2C88A /* BUCAutoManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUCAutoManagedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +120,12 @@
 		3050F62F1901F84300CA4AEB /* BUCAutoObject */ = {
 			isa = PBXGroup;
 			children = (
+				30E43E731908B94000F2C88A /* BUCAutoManagedObject.h */,
+				30E43E741908B94000F2C88A /* BUCAutoManagedObject.m */,
 				3050F6361901F84300CA4AEB /* BUCAutoObject.h */,
 				3050F6371901F84300CA4AEB /* BUCAutoObject.m */,
+				3010FC081908B11F00D5FD6D /* BUCAutoObjectImplementation.h */,
+				3010FC091908B11F00D5FD6D /* BUCAutoObjectImplementation.m */,
 				3050F6301901F84300CA4AEB /* Supporting Files */,
 			);
 			path = BUCAutoObject;
@@ -132,10 +144,10 @@
 		3050F6441901F84300CA4AEB /* BUCAutoObjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				3050F654190201EC00CA4AEB /* TestObject.h */,
-				3050F655190201EC00CA4AEB /* TestObject.m */,
 				3050F64A1901F84300CA4AEB /* BUCAutoObjectTests.m */,
 				3050F6451901F84300CA4AEB /* Supporting Files */,
+				3050F654190201EC00CA4AEB /* TestObject.h */,
+				3050F655190201EC00CA4AEB /* TestObject.m */,
 			);
 			path = BUCAutoObjectTests;
 			sourceTree = "<group>";
@@ -156,6 +168,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3010FC0A1908B11F00D5FD6D /* BUCAutoObjectImplementation.h in Headers */,
+				30E43E751908B94000F2C88A /* BUCAutoManagedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3010FC0B1908B11F00D5FD6D /* BUCAutoObjectImplementation.m in Sources */,
 				3050F6381901F84300CA4AEB /* BUCAutoObject.m in Sources */,
+				30E43E761908B94000F2C88A /* BUCAutoManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +472,7 @@
 				3050F6501901F84300CA4AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3050F6511901F84300CA4AEB /* Build configuration list for PBXNativeTarget "BUCAutoObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +481,7 @@
 				3050F6531901F84300CA4AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,9 +1,8 @@
 //
-//  BUCAutoObject.m
+//  BUCAutoManagedObject.m
 //
 //  Version 2.2
-//
-//  Created by Michael Buckley on 4/18/14.
+//  Created by Buckley on 4/23/14.
 //
 //  Modified from Autocoding. Original copyright and license below
 //
@@ -33,10 +32,10 @@
 //  3. This notice may not be removed or altered from any source distribution.
 //
 
-#import "BUCAutoObject.h"
+#import "BUCAutoManagedObject.h"
 #import "BUCAutoObjectImplementation.h"
 
-@implementation BUCAutoObject
+@implementation BUCAutoManagedObject
 
 + (BOOL)supportsSecureCoding
 {
@@ -83,11 +82,6 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [BUCAutoObjectImplementation encodeObject: self withCoder: aCoder];
-}
-
-- (id)copyWithZone: (NSZone *) zone
-{
-    return [BUCAutoObjectImplementation copyObject: self withZone: zone];
 }
 
 - (BOOL) isEqual: (id) object
