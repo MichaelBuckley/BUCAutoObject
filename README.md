@@ -10,7 +10,7 @@ Use of BUCAutoObject is by no means and all-or-nothing decision. You are free to
 BUCAutoManagedObject
 ---------------------
 
-BUCAutoManagedObject is an NSManagedObject subclass that provides the same functionality as BUCAutoObject, except that it does not support NSCopying, as NSManagedObjects cannot be safely copied.
+BUCAutoManagedObject is an NSManagedObject subclass that provides the same functionality as BUCAutoObject, except that it does not support NSCopying or override -isEqual:, as NSManagedObjects cannot be safely copied and -isEqual: must not be overridden.
 
 ARC Compatibility
 ------------------

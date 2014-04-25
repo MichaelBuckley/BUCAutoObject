@@ -84,9 +84,4 @@
     [BUCAutoObjectImplementation encodeObject: self withCoder: aCoder];
 }
 
-- (BOOL) isEqual: (id) object
-{
-    return [BUCAutoObjectImplementation object: self isEqual: object];
-}
-
 @end
